@@ -93,7 +93,7 @@ var gymbook = function () {
 
                         var mailOptions = {
                             from: 'notifications.ej@gmail.com',
-                            to: 'ebinjoby13@gmail.com',
+                            to: 'ebinjoby13@gmail.com, aakarsh.g2012@gmail.com',
                             subject: 'GYM NOT BOOKED!',
                             text: object2.message + '\n\nSee reservations at https://amenitypass.app/properties/ga2b75sz815wn5xnp8ryvkhy00'
                         };
@@ -114,7 +114,7 @@ var gymbook = function () {
 
                             var mailOptions = {
                                 from: 'notifications.ej@gmail.com',
-                                to: 'ebinjoby13@gmail.com',
+                                to: 'ebinjoby13@gmail.com, aakarsh.g2012@gmail.com',
                                 subject: 'GYM BOOKED!',
                                 text: 'Get ready for the gym on ' + time[2] + ', ' + time[0] + ', at ' + (time[1] % 12) + ' PM!'
                                     + '\n\nTime to get ripped son!!!\n\nSee reservations at https://amenitypass.app/properties/ga2b75sz815wn5xnp8ryvkhy00'
