@@ -21,7 +21,6 @@ rule.second = 00;
 
 
 schedule.scheduleJob(rule, function () {
-    console.log(rule.hour)
     gymbook();
 });
 
@@ -95,7 +94,8 @@ var gymbook = function () {
                             from: 'notifications.ej@gmail.com',
                             to: 'ebinjoby13@gmail.com, aakarsh.g2012@gmail.com',
                             subject: 'GYM NOT BOOKED!',
-                            text: object2.message + '\n\nSee reservations at https://amenitypass.app/properties/ga2b75sz815wn5xnp8ryvkhy00'
+                            text: 'Unsuccessfully attempted reservation for ' + time[2] + ', ' + time[0] + ', at ' + (time[1] % 12) + ' PM!\n\n'
+                                + object2.message + '\n\nSee current reservations at https://amenitypass.app/properties/ga2b75sz815wn5xnp8ryvkhy00'
                         };
 
                         transporter.sendMail(mailOptions, function (error, info) {
@@ -117,7 +117,7 @@ var gymbook = function () {
                                 to: 'ebinjoby13@gmail.com, aakarsh.g2012@gmail.com',
                                 subject: 'GYM BOOKED!',
                                 text: 'Get ready for the gym on ' + time[2] + ', ' + time[0] + ', at ' + (time[1] % 12) + ' PM!'
-                                    + '\n\nTime to get ripped son!!!\n\nSee reservations at https://amenitypass.app/properties/ga2b75sz815wn5xnp8ryvkhy00'
+                                    + '\n\nTime to get ripped son!!!\n\nSee reservation at https://amenitypass.app/properties/ga2b75sz815wn5xnp8ryvkhy00'
                             };
 
                             transporter.sendMail(mailOptions, function (error, info) {
@@ -134,7 +134,6 @@ var gymbook = function () {
         }
     })
 }
-
 
 
 
